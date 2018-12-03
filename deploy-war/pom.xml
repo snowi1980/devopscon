@@ -61,7 +61,6 @@
 							<target name="Start Tomcat">
 								<echo message="Starting Tomcat server"/>
 								<exec executable="cmd">
-									<arg value="/c"/>
 									<arg value="${tomcatLocation}\bin\startup.bat"/>
 								</exec>
 							</target>
