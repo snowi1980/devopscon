@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	ffs = flow feature start
+	fff = flow feature finish
+	fr = "!f() { git fetch && git rebase origin/"$1"; }; f"
+[commit]
+	template = C:/FBM/fbm/build/fbm-app/git_commit_template
+[user]
+	name = Stefan Knaus
+	email = stefan.knaus@gmail.com

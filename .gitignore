@@ -3,3 +3,8 @@ target
 .project
 .settings
 .idea
+
+.bash_history
+.ssh
+.viminfo
+*.code-workspace
