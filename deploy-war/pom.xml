@@ -31,8 +31,9 @@
 						<configuration>
 							<target name="Stop Tomcat">
 								<echo message="Stopping Tomcat server"/>
-								<exec executable="c:\Program Files\Git\bin\bash.exe">
-									<arg value="${tomcatLocation}/bin/shutdown.sh"/>
+								<exec executable="cmd">
+									<arg value="/c"/>
+									<arg value="${tomcatLocation}\bin\shutdown.bat"/>
 								</exec>
 							</target>
 						</configuration>
@@ -59,8 +60,9 @@
 						<configuration>
 							<target name="Start Tomcat">
 								<echo message="Starting Tomcat server"/>
-								<exec executable="c:\Program Files\Git\bin\bash.exe">
-									<arg value="${tomcatLocation}/bin/startup.sh"/>
+								<exec executable="cmd">
+									<arg value="/c"/>
+									<arg value="${tomcatLocation}\bin\startup.bat"/>
 								</exec>
 							</target>
 						</configuration>
